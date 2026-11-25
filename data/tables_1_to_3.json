@@ -1,0 +1,265 @@
+[
+  {
+    "number": 1,
+    "title": "Table 1 Sampling design and specimen composition",
+    "rows": [
+      [
+        "Specimen source",
+        "Sampling time",
+        "Planned animals\nIMQ / Control",
+        "Collected specimens\nIMQ / Control",
+        "Sequenced specimens\nIMQ / Control"
+      ],
+      [
+        "Peripheral blood",
+        "Week 0",
+        "5 / 5"
+      ],
+      [
+        "Peripheral blood",
+        "Week 4",
+        "5 / —"
+      ],
+      [
+        "Peripheral blood",
+        "Week 8",
+        "5 / 5"
+      ],
+      [
+        "Spleen",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Lymph nodes",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Thymus",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Brain",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Kidney",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Liver",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Lung",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Heart",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Intestine",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Skin",
+        "Endpoint week 8",
+        "5 / 5"
+      ],
+      [
+        "Total",
+        "—",
+        "5 / 5"
+      ]
+    ],
+    "note": "Paired values denote the IMQ and untreated control groups, respectively. A dash indicates that no sampling was scheduled for that group at that time. IMQ blood was collected at weeks 0, 4 and 8, and control blood at weeks 0 and 8. All endpoint tissues were collected at week 8, with five mice per group and ten tissues per mouse. The study yielded 25 blood specimens and 100 tissue specimens. Separate TCR and BCR libraries were prepared for each specimen, giving 250 libraries."
+  },
+  {
+    "number": 2,
+    "title": "Table 2 Receptor-specific reverse-transcription and PCR primers",
+    "rows": [
+      [
+        "Receptor chain",
+        "Locus",
+        "RT primer and sequence (5′–3′)",
+        "PCR primer and sequence (5′–3′)"
+      ],
+      [
+        "TCR α",
+        "TRA",
+        [
+          "m_TRAC-RT"
+        ],
+        [
+          "m_TRAC-PCR"
+        ]
+      ],
+      [
+        "TCR β",
+        "TRB",
+        [
+          "m_TRBC-RT"
+        ],
+        [
+          "m_TRBC-PCR"
+        ]
+      ],
+      [
+        "TCR γ",
+        "TRG",
+        [
+          "m_TRGC-RT"
+        ],
+        [
+          "m_TRGC-PCR"
+        ]
+      ],
+      [
+        "TCR δ",
+        "TRD",
+        [
+          "m_TRDC-RT"
+        ],
+        [
+          "m_TRDC-PCR"
+        ]
+      ],
+      [
+        "IgA heavy chain",
+        "IGH",
+        [
+          "m_IGHAC-RT"
+        ],
+        [
+          "m_IGHAC-PCR"
+        ]
+      ],
+      [
+        "IgD heavy chain",
+        "IGH",
+        [
+          "m_IGHDC-RT"
+        ],
+        [
+          "m_IGHDC-PCR"
+        ]
+      ],
+      [
+        "IgE heavy chain",
+        "IGH",
+        [
+          "m_IGHEC-RT"
+        ],
+        [
+          "m_IGHEC-PCR"
+        ]
+      ],
+      [
+        "IgG heavy chain",
+        "IGH",
+        [
+          "m_IGHGC-RT"
+        ],
+        [
+          "m_IGHG1_3-PCR",
+          "m_IGHG2-PCR"
+        ]
+      ],
+      [
+        "IgM heavy chain",
+        "IGH",
+        [
+          "m_IGHMC-RT"
+        ],
+        [
+          "m_IGHMC-PCR"
+        ]
+      ],
+      [
+        "κ light chain",
+        "IGK",
+        [
+          "m_IGKC-RT"
+        ],
+        [
+          "m_IGKC-PCR"
+        ]
+      ],
+      [
+        "λ light chain",
+        "IGL",
+        [
+          "m_IGLC-RT"
+        ],
+        [
+          "m_IGLC-PCR"
+        ]
+      ]
+    ],
+    "note": "All sequences are shown from 5′ to 3′. RT denotes reverse transcription. Primers cover seven receptor chains: four TCR chains and immunoglobulin heavy, κ and λ chains. Heavy-chain primers target five isotypes: IgA, IgD, IgE, IgG and IgM. Two PCR primers were used for IgG. IUPAC degenerate bases are M = A/C, K = G/T, S = G/C, W = A/T, Y = C/T and R = A/G. The table contains 23 primers: 11 RT and 12 PCR primers."
+  },
+  {
+    "number": 3,
+    "title": "Table 3 Data files and repository records",
+    "rows": [
+      [
+        "Data content",
+        "File format",
+        "Record unit",
+        "Repository or identifier"
+      ],
+      [
+        "Raw sequencing reads",
+        "Paired-end FASTQ (*.fq.gz)",
+        "R1/R2 reads for one receptor library",
+        "GSA; BioProject PRJCA075761; CRA051972"
+      ],
+      [
+        "Receptor sequence annotations",
+        "Native MiXCR chain TSV",
+        "Native MiXCR clonotype record",
+        "OMIX022213; 11 native MiXCR TSV archives"
+      ],
+      [
+        "Clonotype and abundance summaries",
+        "Metric TSV and top-100 rank table",
+        "Specimen and chain metrics or abundance rank",
+        "Companion analysis package (see Code availability)"
+      ],
+      [
+        "Animal and specimen metadata",
+        "TSV manifests",
+        "Animal or collected specimen",
+        "OMIX022213; SLE_metadata_QC_PRJCA075761.zip"
+      ],
+      [
+        "Library and sequencing-file mapping",
+        "Library TSV manifest",
+        "Library-to-FASTQ mapping",
+        "OMIX022213 metadata archive; linked to GSA CRA051972"
+      ],
+      [
+        "Quality and file availability",
+        "FastQC HTML/ZIP, QC TSV and chain-status TSV",
+        "File, library or specimen and export category",
+        "OMIX022213; FastQC-report archive and metadata/QC archive"
+      ],
+      [
+        "Analysis workflow and configuration",
+        "Python/R, YAML and TSV",
+        "Versioned processing module",
+        "Companion analysis package (MIT licence, see Code availability)"
+      ]
+    ],
+    "note": "File identifiers, units and missing-value definitions are provided in the data dictionaries. BioProject PRJCA075761 links GSA CRA051972 and OMIX022213. OMIX contains 11 native MiXCR TSV archives, SLE_metadata_QC_PRJCA075761.zip and SLE_FastQC_reports_PRJCA075761.zip. The package includes derived inputs and generates the source tables for each figure. Code is licensed under MIT and numerical source tables under CC BY 4.0."
+  }
+]

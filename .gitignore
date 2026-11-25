@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+.Rhistory
+.RData
+.Rproj.user/
+results/
+.DS_Store
+Thumbs.db

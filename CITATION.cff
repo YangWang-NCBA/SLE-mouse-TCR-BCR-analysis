@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata in this file."
+type: software
+title: "SLE-mouse-TCR-BCR-analysis"
+authors:
+  - given-names: "Wang"
+    family-names: "Yang"
+version: "1.0.0"
+date-released: "2026-11-25"
+url: "https://github.com/YangWang-NCBA/SLE-mouse-TCR-BCR-analysis"
+repository-code: "https://github.com/YangWang-NCBA/SLE-mouse-TCR-BCR-analysis"
+license: MIT
+abstract: >-
+  Analysis software for longitudinal blood and multi-organ TCR/BCR sequencing
+  in IMQ-treated mice. Reproduces Figures 2–4 and Tables 1–4 from processed
+  study data and the authors' derived measurements.

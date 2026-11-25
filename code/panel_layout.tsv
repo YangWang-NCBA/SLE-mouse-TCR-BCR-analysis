@@ -1,0 +1,7 @@
+figure	panel	svg	x_pt	y_pt	width_pt	height_pt	page_width_pt	page_height_pt	min_stroke_pt
+2	Fig2	Fig2_sequencing_quality/Fig2_assembled.svg	0.6198	0.5614	517.6583	424.3101	518.7402	425.1969	0.8731
+3	Fig3	Fig3_umi_support/Fig3_umi_output_diversity.svg	0.7719	0.5688	517.3565	381.9079	518.7402	382.6772	0.8731
+4	Fig4a	Fig4_repertoire_overview/Fig4a_assembled_clonotype_counts.svg	0.5204	0.6233	517.8574	221.5192	518.7402	476.2205	0.8731
+4	Fig4b	Fig4_repertoire_overview/Fig4b_cdr3_length_summary.svg	0.5204	223.0232	517.8574	68.3967	518.7402	476.2205	0.8731
+4	Fig4c	Fig4_repertoire_overview/Fig4c_blood_native_clonotype_counts.svg	1.5327	295.711	515.8349	84.1777	518.7402	476.2205	0.8731
+4	Fig4d	Fig4_repertoire_overview/Fig4d_rank_abundance.svg	1.0036	386.0723	516.8941	87.0052	518.7402	476.2205	0.8731
