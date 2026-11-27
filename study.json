@@ -1,0 +1,538 @@
+{
+  "schema_version": "2.0",
+  "accessions": {
+    "BioProject": "PRJCA075761",
+    "GSA": "CRA051972",
+    "GSA_source": "author-confirmed on 2026-10-18",
+    "OMIX": "OMIX022213"
+  },
+  "shared_animal_conditions": {
+    "organism": "Mus musculus",
+    "taxonomy_id": "10090",
+    "strain": "BALB/c",
+    "sex": "female",
+    "health_status": "specific-pathogen-free",
+    "age_at_study_entry_weeks": "8",
+    "animal_supplier": "Beijing Vital River Laboratory Animal Technology Co., Ltd."
+  },
+  "group_labels": {
+    "untreated_control": {
+      "short": "CON",
+      "treatment_group": "CON_untreated"
+    },
+    "IMQ_treated": {
+      "short": "IMQ",
+      "treatment_group": "IMQ_treated"
+    }
+  },
+  "library_defaults": {
+    "library_strategy": "AMPLICON",
+    "library_source": "TRANSCRIPTOMIC",
+    "library_selection": "RACE",
+    "layout": "PAIRED",
+    "read_length_R1_bp": "300",
+    "read_length_R2_bp": "300",
+    "instrument_model": "SURFSeq 5000",
+    "insert_size_bp": "NA",
+    "mixcr_version": "4.7.0",
+    "reference_library": "imgt.202312-3.sv8",
+    "preset": "generic-amplicon-with-umi"
+  },
+  "processing": {
+    "mixcr_version": "4.7.0; built=Thu Aug 08 03:19:48 CST 2024; rev=976ba14139; lib=repseqio.v5.1",
+    "species": "mmu",
+    "library": {
+      "$ref": "library_defaults.reference_library"
+    },
+    "preset": {
+      "$ref": "library_defaults.preset"
+    },
+    "assemble_feature": "VDJRegion",
+    "tag_pattern": "^N{0:2}aagcagtggtatcaacgcagagt(UMI:N{4}TN{4}TN{4})tcttgggg(R1:*) \\ ^(R2:*) || ^(R1:*) \\ ^N{0:2}aagcagtggtatcaacgcagagt(UMI:N{4}TN{4}TN{4})tcttgggg(R2:*)"
+  },
+  "collection": {
+    "methods": {
+      "blood": "retro-orbital venous plexus; EDTA anticoagulant tube; pentobarbital sodium anaesthesia",
+      "terminal_tissue": "terminal dissection after saline transcardial perfusion"
+    },
+    "scope": {
+      "blood": "whole blood",
+      "lymph_node": "systemic lymph nodes",
+      "other_tissues": "whole tissue"
+    },
+    "sampling_role": {
+      "blood_week_0": "baseline_blood",
+      "blood_later": "longitudinal_blood",
+      "other_tissues": "terminal_tissue"
+    }
+  },
+  "biosample_text": {
+    "tissue_names": {
+      "blood": "blood",
+      "brain": "brain",
+      "heart": "heart",
+      "intestine": "intestine",
+      "kidney": "kidney",
+      "liver": "liver",
+      "lung": "lung",
+      "lymph_node": "lymph node",
+      "skin": "skin",
+      "spleen": "spleen",
+      "thymus": "thymus"
+    },
+    "description_tissue_terms": {
+      "blood": "Whole blood",
+      "brain": "Brain",
+      "heart": "Heart",
+      "intestine": "Intestine",
+      "kidney": "Kidney",
+      "liver": "Liver",
+      "lung": "Lung",
+      "lymph_node": "Lymph nodes",
+      "skin": "Skin",
+      "spleen": "Spleen",
+      "thymus": "Thymus"
+    },
+    "title_template": "sample_id with underscores replaced by spaces",
+    "description_template": "{tissue_term} from {sex} {strain} mouse {mouse_id} ({short_group} group), collected at week {week}.",
+    "age_unit": "Week",
+    "isolation_source": {
+      "lymph_node": "Systemic lymph nodes pooled within the same mouse.",
+      "IMQ_treated_skin": "Skin from the imiquimod application site.",
+      "other": ""
+    }
+  },
+  "observed_constants": {
+    "timing_disclosure": "reported",
+    "unfilled_accessions": {
+      "biosample_accession": "NA",
+      "gsa_experiment_accession": "NA",
+      "gsa_run_accession": "NA"
+    },
+    "fastqc_file_summary": {
+      "sequence_length": "300",
+      "sequences_flagged_poor_quality": "0"
+    },
+    "raw_fastq_library_qc": {
+      "file_qc_complete": "yes",
+      "read_count_difference_R1_minus_R2": "0",
+      "mean_read_length_bp": "300"
+    },
+    "native_source_md5_match": "yes"
+  },
+  "native_schemas": {
+    "S3": {
+      "schema_sha256": "30fef8f0cd0bff11b4d50788b9797351d8cac134298a80b83df19626f9dfd081",
+      "column_count": "51",
+      "columns": [
+        "cloneId",
+        "readCount",
+        "readFraction",
+        "uniqueMoleculeCount",
+        "uniqueMoleculeFraction",
+        "targetSequences",
+        "targetQualities",
+        "allVHitsWithScore",
+        "allDHitsWithScore",
+        "allJHitsWithScore",
+        "allCHitsWithScore",
+        "allVAlignments",
+        "allDAlignments",
+        "allJAlignments",
+        "allCAlignments",
+        "nSeqFR1",
+        "minQualFR1",
+        "nSeqCDR1",
+        "minQualCDR1",
+        "nSeqFR2",
+        "minQualFR2",
+        "nSeqCDR2",
+        "minQualCDR2",
+        "nSeqFR3",
+        "minQualFR3",
+        "nSeqCDR3",
+        "minQualCDR3",
+        "nSeqFR4",
+        "minQualFR4",
+        "aaSeqFR1",
+        "aaSeqCDR1",
+        "aaSeqFR2",
+        "aaSeqCDR2",
+        "aaSeqFR3",
+        "aaSeqCDR3",
+        "aaSeqFR4",
+        "refPoints",
+        "chains",
+        "isotype",
+        "nMutationsCountVRegionTrimmedSubstitutions",
+        "nMutationsRateVRegionTrimmedSubstitutions",
+        "nMutationsCountFR1Substitutions",
+        "nMutationsRateFR1Substitutions",
+        "nMutationsCountCDR1Substitutions",
+        "nMutationsRateCDR1Substitutions",
+        "nMutationsCountFR2Substitutions",
+        "nMutationsRateFR2Substitutions",
+        "nMutationsCountCDR2Substitutions",
+        "nMutationsRateCDR2Substitutions",
+        "nMutationsCountFR3Substitutions",
+        "nMutationsRateFR3Substitutions"
+      ]
+    },
+    "S2": {
+      "schema_sha256": "c4cab383b4e25c3ca7be425a05ef1c113c5338bfdab27eed95a76cb8c7eed0bc",
+      "column_count": "50",
+      "columns": [
+        "cloneId",
+        "readCount",
+        "readFraction",
+        "uniqueMoleculeCount",
+        "uniqueMoleculeFraction",
+        "targetSequences",
+        "targetQualities",
+        "allVHitsWithScore",
+        "allDHitsWithScore",
+        "allJHitsWithScore",
+        "allCHitsWithScore",
+        "allVAlignments",
+        "allDAlignments",
+        "allJAlignments",
+        "allCAlignments",
+        "nSeqFR1",
+        "minQualFR1",
+        "nSeqCDR1",
+        "minQualCDR1",
+        "nSeqFR2",
+        "minQualFR2",
+        "nSeqCDR2",
+        "minQualCDR2",
+        "nSeqFR3",
+        "minQualFR3",
+        "nSeqCDR3",
+        "minQualCDR3",
+        "nSeqFR4",
+        "minQualFR4",
+        "aaSeqFR1",
+        "aaSeqCDR1",
+        "aaSeqFR2",
+        "aaSeqCDR2",
+        "aaSeqFR3",
+        "aaSeqCDR3",
+        "aaSeqFR4",
+        "refPoints",
+        "chains",
+        "nMutationsCountVRegionTrimmedSubstitutions",
+        "nMutationsRateVRegionTrimmedSubstitutions",
+        "nMutationsCountFR1Substitutions",
+        "nMutationsRateFR1Substitutions",
+        "nMutationsCountCDR1Substitutions",
+        "nMutationsRateCDR1Substitutions",
+        "nMutationsCountFR2Substitutions",
+        "nMutationsRateFR2Substitutions",
+        "nMutationsCountCDR2Substitutions",
+        "nMutationsRateCDR2Substitutions",
+        "nMutationsCountFR3Substitutions",
+        "nMutationsRateFR3Substitutions"
+      ]
+    },
+    "S1": {
+      "schema_sha256": "d9686d75e76c1f2721e14faceacfd805b06643a5cccff71bc394ecd260bf79c2",
+      "column_count": "38",
+      "columns": [
+        "cloneId",
+        "readCount",
+        "readFraction",
+        "uniqueMoleculeCount",
+        "uniqueMoleculeFraction",
+        "targetSequences",
+        "targetQualities",
+        "allVHitsWithScore",
+        "allDHitsWithScore",
+        "allJHitsWithScore",
+        "allCHitsWithScore",
+        "allVAlignments",
+        "allDAlignments",
+        "allJAlignments",
+        "allCAlignments",
+        "nSeqFR1",
+        "minQualFR1",
+        "nSeqCDR1",
+        "minQualCDR1",
+        "nSeqFR2",
+        "minQualFR2",
+        "nSeqCDR2",
+        "minQualCDR2",
+        "nSeqFR3",
+        "minQualFR3",
+        "nSeqCDR3",
+        "minQualCDR3",
+        "nSeqFR4",
+        "minQualFR4",
+        "aaSeqFR1",
+        "aaSeqCDR1",
+        "aaSeqFR2",
+        "aaSeqCDR2",
+        "aaSeqFR3",
+        "aaSeqCDR3",
+        "aaSeqFR4",
+        "refPoints",
+        "chains"
+      ]
+    }
+  },
+  "fastqc_modules": {
+    "status_adapter_content": "Adapter Content",
+    "status_basic_statistics": "Basic Statistics",
+    "status_overrepresented_sequences": "Overrepresented sequences",
+    "status_per_base_n_content": "Per base N content",
+    "status_per_base_sequence_content": "Per base sequence content",
+    "status_per_base_sequence_quality": "Per base sequence quality",
+    "status_per_sequence_gc_content": "Per sequence GC content",
+    "status_per_sequence_quality_scores": "Per sequence quality scores",
+    "status_sequence_duplication_levels": "Sequence Duplication Levels",
+    "status_sequence_length_distribution": "Sequence Length Distribution"
+  },
+  "processing_protocol": [
+    {
+      "stage": "trim",
+      "parameter": "software",
+      "value": "Trim Galore",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "trim",
+      "parameter": "historical_version",
+      "value": "not retained",
+      "evidence": "original script did not pin a Trim Galore version"
+    },
+    {
+      "stage": "trim",
+      "parameter": "phred_threshold",
+      "value": "20",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "trim",
+      "parameter": "minimum_length_bp",
+      "value": "35",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "trim",
+      "parameter": "adapter_detection",
+      "value": "default",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "align",
+      "parameter": "mixcr_version",
+      "value": {
+        "$ref": "library_defaults.mixcr_version"
+      },
+      "evidence": "retained alignment reports"
+    },
+    {
+      "stage": "align",
+      "parameter": "species",
+      "value": {
+        "$ref": "processing.species"
+      },
+      "evidence": "retained alignment reports"
+    },
+    {
+      "stage": "align",
+      "parameter": "reference",
+      "value": {
+        "$ref": "library_defaults.reference_library"
+      },
+      "evidence": "retained alignment reports"
+    },
+    {
+      "stage": "align",
+      "parameter": "preset",
+      "value": {
+        "$ref": "library_defaults.preset"
+      },
+      "evidence": "retained alignment reports"
+    },
+    {
+      "stage": "align",
+      "parameter": "v_feature",
+      "value": "VRegionWithP",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "align",
+      "parameter": "left_boundary",
+      "value": "floating",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "align",
+      "parameter": "right_boundary",
+      "value": "floating within C",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "align",
+      "parameter": "molecular_tag",
+      "value": "N{4}TN{4}TN{4}; either read; 12 variable plus 2 fixed positions",
+      "evidence": "retained alignment reports"
+    },
+    {
+      "stage": "refine",
+      "parameter": "command",
+      "value": "refineTagsAndSort",
+      "evidence": "retained refinement reports"
+    },
+    {
+      "stage": "assemble",
+      "parameter": "feature",
+      "value": {
+        "$ref": "processing.assemble_feature"
+      },
+      "evidence": "retained alignment provenance and author-confirmed script"
+    },
+    {
+      "stage": "assemble",
+      "parameter": "separate_assignments",
+      "value": "V; J; C",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "findAlleles",
+      "parameter": "scope",
+      "value": "one BCR library per call",
+      "evidence": "author-confirmed script; retained BCR report inventory"
+    },
+    {
+      "stage": "export",
+      "parameter": "BCR_input",
+      "value": "allele-realigned clone file",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "export",
+      "parameter": "TCR_input",
+      "value": "assembled clone file",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "export",
+      "parameter": "features",
+      "value": "nucleotide and amino-acid; FR1Begin to FR4End",
+      "evidence": "author-confirmed processing script; native field dictionary"
+    },
+    {
+      "stage": "export",
+      "parameter": "uncovered_features",
+      "value": "empty fields",
+      "evidence": "author-confirmed processing script"
+    },
+    {
+      "stage": "export",
+      "parameter": "BCR_substitution_features",
+      "value": "VRegionTrimmed; FR1; CDR1; FR2; CDR2; FR3",
+      "evidence": "author-confirmed processing script; native field dictionary"
+    },
+    {
+      "stage": "export",
+      "parameter": "IGH_isotype",
+      "value": "auto",
+      "evidence": "author-confirmed processing script"
+    }
+  ],
+  "software_versions": {
+    "pipeline": "1.2.1",
+    "Python": "3.14.7",
+    "seqkit": "seqkit v2.14.0",
+    "FastQC": "FastQC v0.12.1",
+    "MultiQC": "multiqc, version 1.35",
+    "R": "Rscript (R) version 4.5.3 (2026-03-11)",
+    "MiXCR": "4.7.0 (parsed from retained reports; MiXCR not rerun)"
+  },
+  "source_provenance": {
+    "meaning": "Historical source hashes retained from the input package; not checksums of the consolidated package members.",
+    "files": [
+      {
+        "source_file": "github/table/metadata/sample_metadata.tsv",
+        "source_sha256": "76d05466bef9159652243a032c92b95cb83f164b16e1171ee14b8f1341770267"
+      },
+      {
+        "source_file": "github/table/metadata/mouse_metadata.tsv",
+        "source_sha256": "d4b6831a215dbedee72e486af8272d19752794c6e6f69394209bf19efe431d2a"
+      },
+      {
+        "source_file": "github/table/metadata/library_metadata.tsv",
+        "source_sha256": "256749f491c17e58322acfbf2d00e212840488e6111ae688e0258cd81b14db6a"
+      },
+      {
+        "source_file": "github/table/metadata/metadata_dictionary.tsv",
+        "source_sha256": "e31e4f2ad965d5bd3d921a4c108c878e77f225f9467a7dc0c3345b93821221b0"
+      },
+      {
+        "source_file": "github/table/metadata/data_dictionary.tsv",
+        "source_sha256": "8b92f076a9dcbb764ac927907b7275b3fa46b264dd6fec8cd4e2e418399e2999"
+      },
+      {
+        "source_file": "github/table/metadata/primer_sequences.tsv",
+        "source_sha256": "66060fb3f3fe52d758a4e953e8ef8bd9b6287f6479d34c83e86507d699e7f138"
+      },
+      {
+        "source_file": "github/table/metadata/processing_protocol.tsv",
+        "source_sha256": "9db6065aaaa6ecb5f4a17f766e2f96d8c50db963ff4ffc3de50cf01008c3360c"
+      },
+      {
+        "source_file": "github/table/metadata/processing_provenance.tsv",
+        "source_sha256": "dde11eef04e8683f2035ec1f554195c38dd301abcf51644a2d6607fe5532305f"
+      },
+      {
+        "source_file": "NGDC/MiXCR_875_expected_chain_file_mapping.tsv",
+        "source_sha256": "6d5dc7387c2931dc310e8034152453eb527a16a18989a1c4098c5f4d1b587b21"
+      },
+      {
+        "source_file": "NGDC/GSA_250_libraries_sample_file_MD5_mapping.tsv",
+        "source_sha256": "585342733439775d76baff924f3c81722f8121e45bc52b93a852216a98aa1686"
+      },
+      {
+        "source_file": "NGDC/sample_id_crosswalk.tsv",
+        "source_sha256": "0c061a27af8c83336f831f0a1c1bd290088edfeb81c10bf1c3eee7028928a7df"
+      },
+      {
+        "source_file": "NGDC/BioSample_125_metadata.tsv",
+        "source_sha256": "082e88fb8476920729463c1dca9e2fb0960724ee16a78428bb4603ced32a26d5"
+      },
+      {
+        "source_file": "NGDC/FASTQ_500_MD5.txt",
+        "source_sha256": "bc1abf1412da0fb6c381c70c01fad48c1135bc91a29386825c4e1fbeb7546797"
+      },
+      {
+        "source_file": "github/table/analysis/fastqc_file_summary.tsv",
+        "source_sha256": "07c120973cc914381d38b6d71233753ea83ee99bda5162a825834a45dd84f7ad"
+      },
+      {
+        "source_file": "github/table/analysis/fastqc_module_status.tsv",
+        "source_sha256": "575159c07e32e3d2afbd9bc196ce05105ae0b0499e8d3a31bb06c062dc2316d5"
+      },
+      {
+        "source_file": "github/table/analysis/mixcr_library_qc.tsv",
+        "source_sha256": "243178dc0522d3293a78da6f0621a5fc2c64ce48ca696de0139a81ec236b7065"
+      },
+      {
+        "source_file": "github/table/analysis/mixcr_chain_report_counts_long.tsv",
+        "source_sha256": "7784665bfd14016b8d82d5cc742b17dbf9d3c75c1827fa2f7104d50e25d33f03"
+      },
+      {
+        "source_file": "github/table/analysis/raw_fastq_library_qc.tsv",
+        "source_sha256": "81a1305cb824eea74938b02c2239105f5b90219c37b481e01246d0ecf538f5e2"
+      },
+      {
+        "source_file": "github/table/analysis/software_versions.tsv",
+        "source_sha256": "61ab140e0ae9cf57c9ae2ea7b3978a505942aed9f6d1fedf835ffe06399d04c4"
+      }
+    ]
+  },
+  "consolidation_source": {
+    "filename": "SLE_metadata_QC_PRJCA075761.zip",
+    "sha256": "87c1b4e06b369aafcdf9d1c4c00250b4b562adbbc840fe3e9757e38742f96b27"
+  }
+}

@@ -5,8 +5,8 @@ title: "SLE-mouse-TCR-BCR-analysis"
 authors:
   - given-names: "Wang"
     family-names: "Yang"
-version: "1.0.0"
-date-released: "2026-11-25"
+version: "1.0.1"
+date-released: "2026-11-27"
 url: "https://github.com/YangWang-NCBA/SLE-mouse-TCR-BCR-analysis"
 repository-code: "https://github.com/YangWang-NCBA/SLE-mouse-TCR-BCR-analysis"
 license: MIT

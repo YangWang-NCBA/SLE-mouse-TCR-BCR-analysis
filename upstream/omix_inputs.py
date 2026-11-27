@@ -111,17 +111,17 @@ def join(left, right, keys, *, validate):
 
 def metadata_root(root):
     """Locate a root layout or the one named wrapper used by earlier deposits."""
-    for candidate in (root, root / Path(METADATA_ZIP).stem):
-        if (candidate / "study.json").is_file() or (candidate / "metadata/sample_metadata.tsv").is_file():
+    stem = Path(METADATA_ZIP).stem
+    for candidate in (root, root / stem, root / stem / stem):
+        if (candidate / "samples.tsv").is_file() or (candidate / "metadata/sample_metadata.tsv").is_file():
             return candidate
-    raise FileNotFoundError(f"Expected study.json or metadata/sample_metadata.tsv under {root}")
+    raise FileNotFoundError(f"Expected samples.tsv or metadata/sample_metadata.tsv under {root}")
 
 
 def metadata_tables(root):
     """Restore the seven existing logical inputs from either deposited schema."""
     root = metadata_root(root)
-    study_path = root / "study.json"
-    if not study_path.is_file():
+    if not (root / "samples.tsv").is_file():
         meta, qc = root / "metadata", root / "qc_summary"
         tables = {name: read_table(meta / (name + ".tsv")) for name in (
             "sample_metadata", "library_metadata", "MiXCR_875_expected_chain_file_mapping",
@@ -134,6 +134,7 @@ def metadata_tables(root):
                 crosswalk[["sample_id", "experimental_week"]], "sample_id", validate="one_to_one")
         return tables
 
+    study_path = Path(__file__).resolve().parents[1] / "study.json"
     study = json.loads(study_path.read_text(encoding="utf-8"))
     if study.get("schema_version") != "2.0":
         raise ValueError(f"Unsupported metadata schema_version: {study.get('schema_version')!r}")
